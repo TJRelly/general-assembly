@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Terrell Jackson</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            text-align: center;
+            background-image: url("https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            font-family: Roboto;
+            min-height: 100vh;
+        }
+
+        p {
+            font-size: 1.75rem;
+        }
+
+        input {
+            border: 0;
+            padding: 10px;
+            font-size: 18px;
+            outline: none;
+            border-radius: 0.25rem;
+        }
+
+        input[type="submit"] {
+            color: white;
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        input[type="submit"]:hover {
+
+            transform: scale(1.025);
+        }
+
+        .image {
+            max-width: 20rem;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            background: url("https://freight.cargo.site/w/750/i/b4b039802287b688ad4f15b2d48c4dfd7ba95a0e974f2966fe7a19e91d26cfe3/MS_Washington_Denzel_CloseUp.jpg");
+            background-size: contain;
+            background-position: center;
+            margin: 0 auto;
+            border: 1px solid #00C9FF;
+            opacity: 0.9;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            max-width: 25rem;
+            min-width: 15rem;
+            margin: 0 auto;
+            background-color: #c2b28080;
+            padding: 0 2rem 2rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image"></div>
+    <p>Hi! I'm Terrell, but this is a pic of Denzel Washington.</p>
+    <form class="form" action="">
+        <h1>Contact Me</h1>
+        <input type="text" placeholder="name" required>
+        <input type="email" placeholder="email" required>
+        <input type="tel" placeholder="phone number">
+        <input type="submit">
+    </form>
+</body>
